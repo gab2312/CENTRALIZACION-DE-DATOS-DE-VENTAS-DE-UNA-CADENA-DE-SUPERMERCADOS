@@ -17,38 +17,42 @@ import static org.junit.Assert.*;
  *
  * @author GAb
  */
-public class ConexionDBTest {
+public class ConexionDBTest 
+{
     
-    public ConexionDBTest() {
+    public ConexionDBTest() 
+    {
     }
     
     @BeforeClass
-    public static void setUpClass() {
+    public static void setUpClass() 
+    {
     }
     
     @AfterClass
-    public static void tearDownClass() {
+    public static void tearDownClass() 
+    {
     }
     
     @Before
-    public void setUp() {
+    public void setUp() 
+    {
     }
     
     @After
-    public void tearDown() {
+    public void tearDown() 
+    {
     }
 
     /**
-     * Test of getConnection method, of class ConexionDB.
+     * Test of GetConnection method, of class ConexionDB.
      */
     @Test
-    public void testGetConnection() {
-        System.out.println("getConnection");
-        Connection expResult = null;
-        Connection result = ConexionDB.getConnection();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testGetConnection() 
+    {
+        System.out.println("GetConnection");
+        Connection result = ConexionDB.GetConnection();
+        assertNotNull(result);
     }
     
 }
